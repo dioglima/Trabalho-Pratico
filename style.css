@@ -50,7 +50,7 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 0px 0px 100px 170px;
+    padding: 0px 0px 40px 170px;
     margin: 0 0 -15px 0;
 }
 
@@ -86,7 +86,7 @@ body{
 .interface {
     width: 1370px;
     background-color: #fff;
-    height: 1900px;
+    height: 2900px;
     margin: -30px auto 0px auto;
     box-shadow: 0px 0px 10px black;
     padding: 20px;
@@ -95,8 +95,9 @@ body{
 .loud{
     display: flex;
     justify-content: center;
-    width: 1350px;
-    padding: 0 175px 0 0;
+    width: 1000px;
+    padding: 0 180px 0 0;
+    margin-top: 5px;
 }
 
 .main-news {
@@ -113,12 +114,12 @@ body{
     padding: 0 50px 0 0;
     height: 50px;
     width: 800px;
-    margin: 0px 5px;  
+    margin: 50px 5px 0px 5px;  
     border-radius: 70px;
 }
 
 .main-news h1 {
-    padding: 10px 20px;
+    padding: 5px 20px;
     color: #fff;
 }
 
@@ -134,52 +135,193 @@ body{
 }
 
 .main-news h2 h3 {
-    color: black;
     display: flex;
     float: right;
 }
 
 .main-news h2 {
-    margin-top: 35px;
+    margin-top: 10px;
     text-decoration: solid;
 }
 
 .main-news h3 {
-    margin-top: 15px;
+    margin: 5px 0px 10px 0px;
     justify-content: center;
 }
 
 .sidebar{
     background-color: rgb(175, 168, 168);
-    
     float: right;
-    margin-right: 5px;
+    margin-right: 12px;
+    padding: 20px 10px;
     width: 450px;
     display: flex;
     text-align: center;
     flex-direction: column;
     border-radius: 20px;
-    
 }
 
 .conteudo-side{
     display: flex;
-    align-items: center;
     flex-direction: column;
+}
+
+.conteudo-side h1 {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-size: 20px;
+}
+
+.loudxsentinels h1 {
+    color: rgb(147, 118, 0);
+    margin-bottom: 10px;
 }
 
 .video-side{
     display: flex;
+    margin-left: 15px;
+    padding: 10px;
+    height: 250px;
+    width: 400px;
+}
+
+.matchs-titles {
+    display: flex;
+    background-color: #fff;
+    margin: 0 auto;
+    opacity: 70%;
     align-items: center;
-    padding: 40px;
+    padding: 10px;
+    margin-bottom: 5px;
+    justify-content: center;
+    border: #fff 1px solid;
+    border-radius: 10px;
+    width: 90%;
 }
 
 .itens-side{
     text-align: center;
+    margin-left: 20px;
+    margin: 0 auto;
 }
 
+.itens-side li {
+    text-align: center;
+    list-style: none;
+    border-bottom: 1px solid #000000;
+    box-sizing:border-box;
+    width: 55%;
+    margin: 0 auto;
+}
 
-.caixa-texto{
+.itens-side a {
+    text-decoration: none;
+    color: black;
+}
+
+.maps-news {
+    margin-top: 10px;
+    position: relative;
     display: flex;
-    
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+
+.maps-news p {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.bind-div, .icebox-div {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: linear-gradient(180deg, rgba(0,0,0,0) 9,74%, #000 100%);
+}
+
+.bind-div p, .icebox-div p {
+    margin: 0 auto;
+    width: 340px;
+}
+
+.bind-main, .icebox-main {
+    padding: 10px;
+    -webkit-filter: blur(1px);
+    -moz-filter: blur(1px);
+    -o-filter: blur(1px);
+    -ms-filter: blur(1px);
+    filter: blur(1px);
+}
+
+.legenda-1, .legenda-2 {
+    position: absolute;
+}
+
+.legenda-1 {
+    left: 170px;
+    bottom: 220px;
+}
+
+.legenda-2 {
+    left: 520px;
+    bottom: 220px;
+}
+
+.legenda-1 h1, .legenda-2 h1 {
+    margin: 0;
+    color: #fff;
+}
+
+.bind-div:hover .legenda-1, .icebox-div:hover .legenda-2 {
+    visibility: visible;
+}
+
+.bind-div:hover, .icebox-div:hover {
+    background: linear-gradient(180);
+}
+
+.maps-gallery-titulo {
+    display: flex;
+    background-color: rgb(147, 118, 0);
+    height: 50px;
+    width: 800px;
+    margin: 0px 5px;  
+    border-radius: 70px;
+    margin-top: 770px;
+}
+
+.maps-gallery-titulo h1 {
+        padding: 5px 20px;
+        color: #fff;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-content: start;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 10px;
+    padding: 0 20px;
+}
+
+.container-gallery {
+    align-self: flex-start;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4px;
+}
+
+.bind, .icebox, .fracture{
+    padding: 4px;
 }
