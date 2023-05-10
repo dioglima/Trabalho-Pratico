@@ -86,7 +86,7 @@ body{
 .interface {
     width: 1370px;
     background-color: #fff;
-    height: 2900px;
+    height: 3900px;
     margin: -30px auto 0px auto;
     box-shadow: 0px 0px 10px black;
     padding: 20px;
@@ -101,6 +101,7 @@ body{
 }
 
 .main-news {
+    
     background-color: rgb(147, 118, 0);
     padding: 0 50px 0 0;
     height: 50px;
@@ -308,7 +309,7 @@ body{
 .container {
     display: flex;
     justify-content: space-between;
-    align-content: start;
+    align-content:start;
     flex-wrap: wrap;
     align-items: center;
     margin-top: 10px;
@@ -326,6 +327,67 @@ body{
     padding: 4px;
 }
 
+
+.novidades-sobre  {
+    border:solid;
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.novidades{
+    width: 50%;
+}
+
+.novidades-torneio{
+    display: flex;
+    flex-direction: row;
+   
+    
+}
+
+.novidades-titulo h1{
+    
+        padding: 5px 20px;
+        color: #fff;
+
+}
+
+.atualizacao-img{
+    margin-top: 10px;
+}
+
+.novidades-titulo{
+    background-color: rgb(147, 118, 0);
+    padding: 0 50px 0 0;
+    height: 50px;
+    width: 800px;
+    margin: 50px 5px 0px 5px;  
+    border-radius: 70px;
+}
+
+.sobre{
+   border: solid;
+   width: 50%;
+   
+}
+
+.sobre h1{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.sobre-texto{
+    border: solid;
+    display: flex;
+    align-items: center;
+}
+
+.sobre-video{
+    display: flex;
+    justify-content: center;
+}
 
 @media (max-Width: 768px) {
     
