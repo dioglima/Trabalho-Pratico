@@ -325,3 +325,32 @@ body{
 .bind, .icebox, .fracture{
     padding: 4px;
 }
+
+
+@media (max-Width: 768px) {
+    
+    .header{
+        justify-content: space-around;
+    }
+    
+    .links{
+        visibility: hidden;
+    }
+
+   .interface{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   }
+
+    .sidebar{
+        
+    }
+
+    .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+}
