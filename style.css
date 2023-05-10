@@ -316,12 +316,15 @@ body{
     padding: 0 20px;
 }
 
-.container-gallery {
-    align-self: flex-start;
+.teste {
+    display: flex;
     justify-content: space-between;
+    align-content:start;
+    flex-direction: row;
     align-items: center;
-    padding: 4px;
 }
+
+
 
 .bind, .icebox, .fracture{
     padding: 4px;
