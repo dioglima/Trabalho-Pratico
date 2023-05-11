@@ -283,14 +283,6 @@ body{
     color: #fff;
 }
 
-.bind-div:hover .legenda-1, .icebox-div:hover .legenda-2 {
-    visibility: visible;
-}
-
-.bind-div:hover, .icebox-div:hover {
-    background: linear-gradient(180);
-}
-
 .maps-gallery-titulo {
     display: flex;
     background-color: rgb(147, 118, 0);
@@ -308,27 +300,103 @@ body{
 
 .container {
     display: flex;
-    justify-content: space-between;
     align-content:start;
+    align-items: flex-start;
     flex-wrap: wrap;
     align-items: center;
     margin-top: 10px;
-    padding: 0 20px;
 }
 
 .teste {
-    display: flex;
-    justify-content: space-between;
-    align-content:start;
+    align-content: flex-start;
+    align-items: start;
     flex-direction: row;
+    justify-content: space-around;
+}
+
+.teste2 {
+    display: flex;
+    justify-content: space-around;
+    align-content:start;
+    align-items: flex-start;
+}
+
+
+.ultima-fileira {
+    display: flex;
+    flex-direction: row;
+    align-content:start;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+
+.container-gallery {
+    display: flex;
+    justify-content: space-around;
+    align-content:start;
+    align-items: flex-start;
+    flex-direction: column;
     align-items: center;
 }
 
-
-
-.bind, .icebox, .fracture{
-    padding: 4px;
+.bind, .icebox, .fracture, .ascent, .pearl, .haven, .breeze, .split, .lotus {
+    padding: 5px;
 }
+
+.haven {
+    margin-top: -7px;
+}
+
+.bind {
+    padding: 5px;
+    overflow: hidden;
+    position: relative;
+}
+
+.bind-img {
+    object-fit: cover;
+}
+
+.bind-body {
+    width: 880;
+    height: 300;
+    top: 0;
+    right: -200%;
+    position: absolute;
+    background: #1f3d47;
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    color: #fff;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: 3s;
+}
+
+.bind:hover .bind-body {
+    right: 0;
+}
+
+.bind-body h1 {
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.bind-body h2 {
+    text-transform: capitalize;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.bind-body h3 {
+    font-size: 16px;
+    line-height: 25px;
+    font-weight: 400;
+    margin: 40px 0;
+}
+
 
 
 .novidades-sobre  {
