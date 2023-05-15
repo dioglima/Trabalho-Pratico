@@ -243,7 +243,7 @@ body{
 
 .maps-news {
     margin-top: 10px;
-    position: relative;
+    position: absolute;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -263,7 +263,7 @@ body{
 }
 
 .bind-div, .icebox-div {
-    display: block;
+    display: inline;
     align-items: center;
     justify-content: center;
     text-align: center;
@@ -271,7 +271,7 @@ body{
 }
 
 .bind-div p, .icebox-div p {
-    margin: 0 auto;
+    
     width: 340px;
 }
 
@@ -360,6 +360,9 @@ body{
     flex-direction: column;
     align-items: center;
 }
+
+
+
 
 .bind, .icebox, .fracture, .ascent, .pearl, .haven, .breeze, .split, .lotus {
     padding: 5px;
@@ -816,7 +819,7 @@ body{
 }
 
 .novidades-sobre  {
-    border:solid;
+    
     display: flex;
     flex-direction: row;
     
@@ -824,12 +827,13 @@ body{
 
 .novidades{
     width: 50%;
+    padding: 0px 20px 0px;
 }
 
 .novidades-torneio{
     display: flex;
     flex-direction: row;
-   
+    margin: 20px;
     
 }
 
@@ -854,8 +858,11 @@ body{
 }
 
 .sobre{
-   border: solid;
-   width: 50%;
+   border-radius: 10px;
+   margin-left: 450px;
+   background-color: gainsboro;
+   width: 550px;
+   height: 650px;
    
 }
 
@@ -866,7 +873,7 @@ body{
 }
 
 .sobre-texto{
-    border: solid;
+    margin: 10px;
     display: flex;
     align-items: center;
 }
@@ -874,6 +881,7 @@ body{
 .sobre-video{
     display: flex;
     justify-content: center;
+    margin: 10px;
 }
 
 .center-section {
@@ -1011,19 +1019,34 @@ width: 100px;
     }
 
    .interface{
-    display: flex;
+    display: block;
+    height: 5500px;
+    
+    
+   }
+
+   .novidades-sobre{
     flex-direction: column;
-    align-items: center;
+   }
+
+   .sobre{
+    margin: 0px;
+    width: 80%;
    }
 
     .sidebar{
-        
+      visibility: hidden;  
     }
 
     .container{
         display: flex;
-        flex-direction: column;
         align-items: center;
+        
+        
     }
+
+   .teste2{
+    flex-direction: row;
+   }
     
 }
